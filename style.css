@@ -1,0 +1,96 @@
+*{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+width: 100%;
+margin: 0 auto;
+box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%); 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+h1{
+    color: #08486d;
+    font-size: 48px;  
+}
+.container-imput{
+    max-width: 480px;
+    margin: 14px 0;
+}
+.container-imput span{
+    color: black;
+    font-size: 22px;
+}
+.slider{
+    --webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: rgb(185, 173, 173);
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+    --webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.buttonCta{
+    height: 40px;
+    background-color: #08486d;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #e4efe9;
+    font-weight: bold;
+    font-size: 18px;
+}
+.containerPassword{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    color: #08486d;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.password{
+    height: 60px;
+    background-color: #037785;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+    cursor: pointer;
+
+}
+.password:hover{
+    transform: scale(1.05);
+}
+#copySenha{ 
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    visibility: hidden;
+
+}
+.hide{
+    display: none;
+}
+.containerPassword:hover #copySenha{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
